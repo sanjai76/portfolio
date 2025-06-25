@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Developer Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <!-- Bootstrap JS (Required for carousel to work) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+
+    <!-- Vanta.js & Three.js -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="portfolio.css" />
+</head>
+
+<body>
+    <div id="vanta-bg"></div>
+
+    <!-- ✅ Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fs-3 fw-bold" href="#">Sanjai N</a>
+
+            <!-- Custom Toggle Button -->
+            <button class="navbar-toggler custom-toggler" type="button" id="navbarToggler">
+                <div class="navbar-toggler-icon">
+                    <span></span>
+                </div>
+            </button>
+
+            <!-- Collapsible Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#edu-exp">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="section slide-left" id="hero">
+        <div class="containers d-flex align-items-center justify-content-evenly ">
+            <!-- Right Image -->
+            <div class="hero-image-wrapper position-relative text-center">
+                <div class="hero-frame animate-glow mx-auto">
+                    <div class="hero-image">
+                        <img src="jesjes.png" alt="Profile Picture" class="img-fluid rounded-circle" />
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Left Text and Icons -->
+            <div class="hero-text text-white">
+                <h2>Hello, I'm <span>Sanjai N</span></h2>
+                <p class="hero-summary">
+                    Passionate <span style="--i:4;" data-text="Full Stack Developer">Full Stack
+                        Developer</span>
+                    <span style="--i:3;" data-text="Web Developer">Web Developer</span>
+                    <span style="--i:2;" data-text="Python Developer">Python Developer</span>
+                    <span style="--i:1;" data-text="Software Developer">Software Developer</span> skilled in
+                    Python, Django and React. Turning complex ideas into
+                    beautiful, functional apps.
+                </p>
+                <p class="hero-quotes mt-3">
+                    “Code is like humor. When you have to explain it, it’s bad.”<br>
+                    “First, solve the problem. Then, write the code.”<br>
+                    “Strive for progress, not perfection.”
+                </p>
+
+                <div class="hero-icons mt-4">
+                    <a href="mailto:sanjaimsd141@gmail.com"><i class="fas fa-envelope fa-lg me-3"></i></a>
+                    <a href="tel:+917708692339"><i class="bi bi-telephone-fill fa-lg me-3" title="Call"></i></a>
+                    <a href="https://linkedin.com/in/Sanjai N" target="_blank"><i
+                            class="fab fa-linkedin fa-lg me-3"></i></a>
+                    <a href="https://github.com/sanjai76" target="_blank"><i class="fab fa-github fa-lg me-3"></i></a>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+
+    <!-- About Section -->
+    <section id="about" class="section fade-slide-left about py-5">
+        <div class="container d-flex flex-wrap align-items-center">
+
+            <div class="about-text col-md-6 animate-fade-in">
+                <h2 class="mb-3"><i class="bi bi-person-fill me-2"></i>About Me</h2>
+                <p class="lead scroll-animate" data-delay="0s">
+                    I am a passionate <strong>Entry-Level Full-Stack Developer</strong> eager to grow and learn in
+                    the
+                    software industry.
+                    Skilled in <strong>React</strong>, <strong>Python</strong>, and <strong>Django</strong>, I enjoy
+                    building clean, functional web applications.
+                </p>
+                <p class="scroll-animate" data-delay="0.3s">
+                    During my academic projects and internships, I have gained hands-on experience in developing
+                    user-friendly interfaces,
+                    REST APIs, and working with databases like SQL.
+                </p>
+                <p class="scroll-animate" data-delay="0.5s">
+                    I am excited to contribute my creativity, problem-solving skills, and enthusiasm to a dynamic
+                    software development team.
+                    I’m committed to continuous learning and staying updated with the latest industry trends.
+                </p>
+                <p class="scroll-animate" data-delay="0.7s">
+                    Looking forward to collaborating on innovative projects and making a positive impact through
+                    technology.
+                </p>
+                <a href="#projects" class="btn btn-success mt-3">
+                    <i class="bi bi-lightning-fill me-1"></i> View My Projects
+                </a>
+            </div>
+            <div class="about-img col-md-6 mb-4" style="padding-left: 100px;">
+                <div class="about-frame">
+                    <img src="jajjjjj.png" alt="About" class="img-fluid rounded about-frame-img" />
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- Education & Experience in One Line -->
+    <section id="edu-exp" class="section edu-exp py-5 zoom-in">
+        <div class="container text-center">
+            <h2 class="mb-5" style="color:#00fd00; font-weight: 600;">My Journey</h2>
+
+            <div class="edu-exp-flex">
+                <!-- Education -->
+                <div class="edu-exp-column">
+                    <h4 class="edu-title">Education</h4>
+                    <div class="edu-exp-card">
+                        <img src="amrita-removebg-preview.png" alt="Graduation Icon" class="icon-img">
+                        <h5>Bachelor of Engineering</h5>
+                        <p>Amrita College of Engineering and Technology<br>2020 - 2024</p>
+                    </div>
+                    <div class="edu-exp-card">
+                        <img src="sng.jpg" alt="Graduation Icon" class="icon-img" style="border-radius:50px;">
+
+                        <h5>Higher Secondary</h5>
+                        <p>Sree Narayana Guru Matric Hr Sec School<br>2019-2020</p>
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <div class="edu-exp-column">
+                    <h4 class="edu-title">Experience</h4>
+                    <div class="edu-exp-card">
+                        <img src="suffix.png" alt="Graduation Icon" class="icon-img" style="background-color: #ffffff;">
+                        <h5>OJT Experience</h5>
+                        <p>On Job Training at Suffix E Solutions<br>Mar 2025 - Present</p>
+                    </div>
+                    <div class="edu-exp-card">
+                        <img src="scope.jpg" alt="Graduation Icon" class="icon-img">
+                        <h5>Internship</h5>
+                        <p>Fullstack Web Development Intern at Scope India <br>July 2024 - Feb 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills py-5 scale flip-in">
+        <div class="container text-center">
+            <h2 class="mb-5" style="color:#00fd00; font-weight: 700;">Skills</h2>
+            <div class="skills-grid">
+                <!-- Skill Card Template -->
+                <div class="skill-card">
+                    <i class="devicon-html5-plain colored fs-1 "></i>
+                    <h5>HTML5</h5>
+                    <p style="color: #ffffff;">Semantic markup and modern web structure. Structure of the Webpage. </p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="devicon-css3-plain colored fs-1 "></i>
+                    <h5>CSS3</h5>
+                    <p style="color: #ffffff;">Responsive design with Flexbox, Grid, and animations.</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="devicon-javascript-plain colored fs-1"></i>
+                    <h5>JavaScript</h5>
+                    <p style="color: #ffffff;"> DOM manipulation, and asynchronous programming.</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="devicon-bootstrap-plain colored fs-1 "></i>
+                    <h5>Bootstrap</h5>
+                    <p style="color: #ffffff;">Rapid UI development with Bootstrap components.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="devicon-python-plain colored fs-1"></i>
+                    <h5>Python</h5>
+                    <p style="color: #ffffff;">Clean code, automation, and backend logic.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="devicon-jquery-plain colored fs-1 "></i>
+                    <h5>jQuery</h5>
+                    <p style="color: #ffffff;">Legacy projects and simple DOM manipulation.</p>
+                </div>
+
+
+                <div class="skill-card">
+                    <i class="devicon-react-original colored fs-1"></i>
+                    <h5>React</h5>
+                    <p style="color: #ffffff;">Component-based UI with hooks and state management.</p>
+                </div>
+
+
+
+                <div class="skill-card">
+                    <i class="fas fa-sync-alt fs-1" title="AJAX"></i>
+                    <h5>AJAX</h5>
+                    <p style="color: #ffffff;">Dynamic content loading and API calls.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="devicon-django-plain colored fs-1 "></i>
+                    <h5>Django</h5>
+                    <p style="color: #ffffff;">Robust backend development and REST API creation.</p>
+                </div>
+
+
+
+                <div class="skill-card">
+                    <i class="devicon-mysql-plain colored fs-1 "></i>
+                    <h5>SQL</h5>
+                    <p style="color: #ffffff;">Database design, queries, and data management.</p>
+                </div>
+                <div class="skill-card">
+                    <iconify-icon icon="material-symbols:api-rounded" width="40" title="API"></iconify-icon>
+                    <h5>API Integration</h5>
+                    <p style="color: #ffffff;">Consuming RESTful APIs with JSON data.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects py-5 rotate fade-slide-left">
+        <div class="container">
+            <h2 class="mb-4 text-center" style="color: #00fd00;font-weight:600">Projects</h2>
+
+            <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+                <div class="carousel-inner">
+
+                    <!-- Project 1 -->
+                    <div class="carousel-item active">
+                        <div class="project-card text-center">
+                            <h3 class="project-title">Project 1: Suffix E Solutions - Clone</h3>
+                            <p class="project-description">
+                                I developed this full-stack Django project with database interaction as an
+                                individual
+                                project.
+                            </p>
+                            <ul class="project-description">
+                                <li>Includes a contact form, registration form, and login form — all built using
+                                    Django.
+                                </li>
+                                <li>Used Django ORM for efficient database communication.</li>
+                                <li>Fully mobile-responsive design with clean UI and user-friendly UX.</li>
+                            </ul>
+                            <p class="project-description"><strong>Languages Used :</strong> Python, Django, HTML,
+                                CSS,
+                                JavaScript</p>
+
+                            <div class="d-flex justify-content-center gap-3 flex-wrap mb-3">
+                                <img src="ScopeBack.png" class="project-image" alt="Scope Image 1">
+                                <img src="ScopeTwo.png" class="project-image" alt="Scope Image 2">
+                                <img src="ScopeThreeeee.png" class="project-image" alt="Scope Image 3">
+                                <img src="Scopefourrr.png" class="project-image" alt="Scope Image 4">
+                            </div>
+
+                            <div class="video-wrapper">
+                                <video autoplay muted loop playsinline class="project-video">
+                                    <source src="ScopeCompress.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Project 2 -->
+                    <div class="carousel-item">
+                        <div class="project-card text-center">
+                            <h3 class="project-title">Project 2: Sales Management System</h3>
+                            <p class="project-description">
+                                Designed and developed a full-stack Sales Management System using Django and Python.
+
+                            </p>
+                            <ul class="project-description">
+                                <li>Includes Home, About, and Services sections with user-friendly product display and
+                                    interaction.
+                                </li>
+                                <li>Integrated an admin panel to manage product listings, updates, and inventory
+                                    operations.
+                                </li>
+                                <li>Fully responsive UI built using HTML, CSS, JavaScript, and Django ORM for seamless
+                                    database handling.
+
+                                </li>
+                            </ul>
+                            <p class="project-description"><strong>Languages Used :</strong> Python, Django, HTML,
+                                CSS,
+                                JavaScript</p>
+
+                            <div class="d-flex justify-content-center gap-3 flex-wrap mb-3">
+                                <img src="SalesBack.png" class="project-image" alt="Scope Image 1">
+                                <img src="SalesTwo.png" class="project-image" alt="Scope Image 2">
+                                <img src="Salesthreeeee.png" class="project-image" alt="Scope Image 3">
+                                <img src="SalesFourrr.png" class="project-image" alt="Scope Image 4">
+                            </div>
+
+                            <div class="video-wrapper">
+                                <video autoplay muted loop playsinline class="project-video">
+                                    <source src="SalesCompress.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="carousel-item">
+                        <div class="project-card text-center">
+                            <h3 class="project-title">Project 3: Gmail Project</h3>
+                            <p class="project-description">
+                                Built a Gmail clone using Django and Gmail API with real-time email features, Gmail-like
+                                UI.
+                            </p>
+                            <ul class="project-description">
+                                <li>This project replicates core Gmail functionalities like inbox, sent, draft, trash,
+                                    and categorized views (Promotions, Social, Updates).
+                                </li>
+                                <li>Users can read, reply, forward, star, and search emails with a responsive UI that
+                                    mimics the original Gmail interface.
+                                </li>
+                                <li>It integrates the official Gmail API for real-time email management.
+                                </li>
+                            </ul>
+                            <p class="project-description"><strong>Languages Used :</strong>Python, Django, HTML & CSS,
+                                Javascript, Gmail API.</p>
+
+                            <div class="d-flex justify-content-center gap-3 flex-wrap mb-3">
+                                <img src="gmailOne.png" class="project-image" alt="Scope Image 1">
+                                <img src="gmailTwo.png" class="project-image" alt="Scope Image 2">
+                                <img src="gmailThree.png" class="project-image" alt="Scope Image 3">
+                                <img src="gmailFour.png" class="project-image" alt="Scope Image 4">
+                            </div>
+
+                            <div class="video-wrapper">
+                                <video autoplay muted loop playsinline class="project-video">
+                                    <source src="GmailCompress.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 4 -->
+                    <div class="carousel-item">
+                        <div class="project-card text-center">
+                            <h3 class="project-title">Project 4: Netflix Clone</h3>
+                            <p class="project-description">
+                                Developed a front-end Netflix clone using HTML, CSS, and JavaScript with a focus on
+                                clean UI and smooth transitions.
+                            </p>
+                            <ul class="project-description">
+                                <li>Implemented a hero section, trending shows carousel, and Q&A section for enhanced
+                                    interactivity.
+                                </li>
+                                <li>Utilized JavaScript to manage dynamic content appearance and user interaction.
+                                </li>
+                                <li>Fully mobile-responsive design ensuring accessibility across all devices.</li>
+                            </ul>
+                            <p class="project-description"><strong>Languages Used :</strong> HTML,
+                                CSS,
+                                JavaScript</p>
+
+                            <div class="d-flex justify-content-center gap-3 flex-wrap mb-3">
+                                <img src="NetflixBack.png" class="project-image" alt="Scope Image 1">
+                                <img src="NetTwo.png" class="project-image" alt="Scope Image 2">
+                                <img src="NetThreeeee.png" class="project-image" alt="Scope Image 3">
+                                <img src="Netfour.png" class="project-image" alt="Scope Image 4">
+                            </div>
+
+                            <div class="video-wrapper">
+                                <video autoplay muted loop playsinline class="project-video">
+                                    <source src="NetflixCompress.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="carousel-item">
+                        <div class="project-card text-center">
+                            <h3 class="project-title">Project 5: Cricket Website</h3>
+                            <p class="project-description">
+                                Created an interactive cricket website focused on clean UI and engaging UX using HTML,
+                                CSS, JavaScript, and Bootstrap.
+                            </p>
+                            <ul class="project-description">
+                                <li>Designed sections including Home, Contact, and Cricket News to deliver relevant
+                                    updates.
+                                </li>
+                                <li>Leveraged Bootstrap to ensure full mobile responsiveness across all devices.
+                                </li>
+                                <li>Emphasized user-friendly navigation with a structured and visually appealing layout.
+                                </li>
+                            </ul>
+                            <p class="project-description"><strong>Languages Used :</strong> Bootstarp, HTML,
+                                CSS,
+                                JavaScript</p>
+
+                            <div class="d-flex justify-content-center gap-3 flex-wrap mb-3">
+                                <img src="CricOne.png" class="project-image" alt="Scope Image 1">
+                                <img src="CricTwo.png" class="project-image" alt="Scope Image 2">
+                                <img src="CricThreeeee.png" class="project-image" alt="Scope Image 3">
+                                <img src="cricfour.png" class="project-image" alt="Scope Image 4">
+                            </div>
+
+                            <div class="video-wrapper">
+                                <video autoplay muted loop playsinline class="project-video">
+                                    <source src="CricketCompresss.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6-->
+                    <div class="carousel-item">
+                        <div class="project-card text-center">
+                            <h3 class="project-title">Project 6: College Website</h3>
+                            <p class="project-description">
+                                Designed and developed a static college website using HTML and CSS with a structured
+                                layout.
+                            </p>
+                            <ul class="project-description">
+                                <li>Included key sections such as Home, About, Courses, and Contact.
+                                </li>
+                                <li>Focused on clean UI, easy navigation, and visually appealing design.
+                                </li>
+                                <li>Fully responsive layout ensuring accessibility across desktops and mobile devices.
+                                </li>
+                            </ul>
+                            <p class="project-description"><strong>Languages Used :</strong> HTML,
+                                CSS</p>
+
+                            <div class="d-flex justify-content-center gap-3 flex-wrap mb-3">
+                                <img src="Colone.png" class="project-image" alt="Scope Image 1">
+                                <img src="ColTwo.png" class="project-image" alt="Scope Image 2">
+                                <img src="ColThreeeee.png" class="project-image" alt="Scope Image 3">
+                                <img src="Colfourrr.png" class="project-image" alt="Scope Image 4">
+                            </div>
+
+                            <div class="video-wrapper">
+                                <video autoplay muted loop playsinline class="project-video">
+                                    <source src="CollegeCompresssss.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact text-light py-5 zoom-in">
+        <div class="container text-center">
+            <h2 class="mb-5" style="color: #00fd00;font-weight:600">Contact Me</h2>
+
+            <div class="row justify-content-center gy-4">
+
+                <div class="col-md-4">
+                    <div class="contact-box p-4 rounded">
+                        <i class="bi bi-envelope-fill fs-2 "></i>
+                        <h5 class="mt-2">Email</h5>
+                        <p><a href="mailto:your.email@example.com">sanjaimsd141@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="contact-box p-4 rounded">
+                        <i class="bi bi-phone-fill fs-2"></i>
+                        <h5 class="mt-2">Phone</h5>
+                        <p><a href="tel:+917708692339">7708692339</a></p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="contact-box p-4 rounded">
+                        <i class="bi bi-geo-alt-fill fs-2"></i>
+                        <h5 class="mt-2">Address</h5>
+                        <p style="color: #90ee90;">Kanyakumari, Tamil Nadu, India</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="contact-box p-4 rounded">
+                        <i class="bi bi-linkedin fs-2 "></i>
+                        <h5 class="mt-2">LinkedIn</h5>
+                        <p><a href="https://linkedin.com/in/Sanjai N" target="_blank">Sanjai N</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="contact-box p-4 rounded">
+                        <i class="bi bi-whatsapp fs-2 "></i>
+                        <h5 class="mt-2">WhatsApp</h5>
+                        <p><a href="https://wa.me/917708692339" target="_blank">+91 7708692339</a></p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="contact-box p-4 rounded">
+                        <i class="bi bi-github fs-2 "></i>
+                        <h5 class="mt-2">GitHub</h5>
+                        <p><a href="https://github.com/sanjai76" target="_blank">Sanjai N</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="portfolio-footer">
+        <div class="footer-content">
+            <p>&copy; <span id="year"></span> Sanjai N | All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Auto-update the current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+
+
+    <!-- Bootstrap JS (optional, if you want carousel or other JS features) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+    <!-- Include Three.js and Vanta.NET -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+
+    <script>
+        let effect = VANTA.NET({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x00ff66,
+            backgroundColor: 0x000000,
+            points: 14.0,
+            maxDistance: 17.0,
+            spacing: 21.0,
+            showDots: true,
+            lineWidth: 0.8
+        });
+
+        // Smooth color cycling between neon greens
+        const palette = [0x00ff66, 0x21ffb2, 0x0fff95, 0x18ff4b];
+        let i = 0;
+        setInterval(() => {
+            i = (i + 1) % palette.length;
+            effect.setOptions({ color: palette[i] });
+        }, 6000);
+    </script>
+
+</body>
+
+</html>
