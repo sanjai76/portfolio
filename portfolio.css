@@ -390,6 +390,7 @@ main {
     .nav-link:hover::after {
         width: 15%;
     }
+    
 }
 
 
