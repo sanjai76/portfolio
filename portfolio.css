@@ -359,7 +359,15 @@ main {
 /* Responsive Adjustments */
 @media (max-width: 991px) {
     .navbar-nav {
-        margin-top: 1rem;
+        display: none;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-brand {
+        margin-inline: auto;
     }
 
     .nav-link {
