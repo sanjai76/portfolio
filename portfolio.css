@@ -390,7 +390,13 @@ main {
     .nav-link:hover::after {
         width: 15%;
     }
-    
+    #vanta-bg {
+        display: none;
+    }
+
+    body {
+        background: #000;
+    }
 }
 
 
@@ -1504,3 +1510,4 @@ main {
         padding: 12px 10px;
     }
 }
+
